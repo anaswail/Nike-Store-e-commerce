@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Start Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- End Google Fonts  -->
+
+    <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <title>Nike Store</title>
+</head>
+
+<body>
+    <!-- start Buy Product Window -->
+    <div class="buyProductWindow fixed overflow-y-scroll top-0 left-0 bg-white w-0 transition-all duration-[1500ms] overflow-hidden h-[100vh] z-50 flex justify-center items-center flex-col  md:flex-row">
+        <i class="fa-solid fa-left-long closeProductWindow bg-gradient-to-t from-[#DE00F6] to-[#372CD2] absolute top-0 md:top-3 right-3 text-white p-3 z-50 cursor-pointer text-lg rounded-3xl hover:rounded-lg transition-all hover:text-black"></i>
+        
+        <div class="img-container relative w-[440px] h-[600px] md:w-[540px] md:h-[500px] bg-gradient-to-b from-[#DE00F6] to-[#372CD2] p-5 rounded-[150px] justify-center items-center">
+            <img src="./image/air.png" class="w-[295px] h-[254px] md:w-[495px] md:h-[454px] productWindowImg" alt="">
+        </div>
+
+        <div class="content p-8 relative">
+            <h1 class="buyTitle text-black text-[50px] md:text-[90px] font-extrabold uppercase italic ">air force</h1>
+            <div class="personal flex">
+                <input type="text" placeholder="Name" class="formName w-1/2 mr-2">
+                <input type="text" placeholder="Phone Number" class="formNumber w-3/4 ">
+            </div>
+            <input type="text" placeholder="Adress" class="formAdress w-full my-5">
+            <div class="price flex flex-col md:flex-row items-center">
+                <input type="number" placeholder="Count" class="productCount w-full md:w-1/2 mr-2">
+                <div class="priceDiv flex h-[50px] mx-3 w-full my-2 md:my-0 md:w-3/4 bg-black rounded-[6px] justify-center items-center font-bold italic drop-shadow-md">
+                    <h2 class="bg-black text-white text-[25px] text-center mr-8">Price</h2>
+                    <span class="productPrice bg-white border-[1px] border-solid border-black">$199</span>
+                </div>
+                <div class="totalDiv flex h-[50px] w-full md:w-3/4 bg-black rounded-[6px] justify-center items-center font-bold italic drop-shadow-md">
+                    <h2 class="bg-black text-white text-[25px] text-center mr-8">Total</h2>
+                    <span class="totalPrice bg-white border-[1px] border-solid border-black">$0</span>
+                </div>
+            </div>
+
+            <input type="submit" value="Buy Now" class="buyButton drop-shadow-md w-full mt-5 font-extrabold hover:bg-black hover:text-white cursor-pointer text-[20px] italic">
+        </div>
+     </div>
+    <!-- End Buy Product Window -->
+
+    <!-- Start NavBar  -->
+    <nav id="nav" class="bg-[#111] text-white p-[20px] md:px-[50px] md:py-[20px]">
+        <!-- Start Nav Top  -->
+        <div class="NavTop flex justify-between items-center">
+            <div class="navItem">
+                <img src="./image/sneakers.png" class="md:w-full w-[70%]" alt="">
+            </div>
+            <div class="navItem">
+                <div class="search hidden md:flex bg-[gray] items-center px-[20px] py-[10px] rounded-[10px]">
+                    <input type="text" placeholder="Search..."
+                        class="searchInput bg-transparent placeholder:text-gray-200 border-none outline-none">
+                    <img src="./image/search.png" class="searchIcon w-[20px] h-[20px] " alt="">
+                </div>
+            </div>
+            <div class="navItem">
+                <span class="limitedOffer text-[15px] md:text-[20px] border-b-2 border-green-600 cursor-pointer relative">Limited
+                    Offer!</span>
+            </div>
+        </div>
+        <!-- End Nav Top  -->
+
+        <!-- Start Nav Bottom -->
+        <div class="NavBottom flex items-center flex-wrap justify-center mt-5">
+            <h2 class="menuItem">AIR FORCE</h2>
+            <h2 class="menuItem">JORDAN</h2>
+            <h2 class="menuItem">BLAZER</h2>
+            <h2 class="menuItem">CRATER</h2>
+            <h2 class="menuItem">HIPPIE</h2>
+        </div>
+        <!-- End Nav Bottom -->
+    </nav>
+    <!-- End NavBar  -->
+
+    <!-- Start Slider  -->
+    <div class="slider overflow-x-hidden relative">
+        <div class="sliderwrapper flex w-[500vw] transition-all duration-[1500ms] ease-in-out">
+            <div class="sliderItem ">
+                <img src="./image/air.png" alt="" class="slideImage">
+                <div class="slideBg"></div>
+                <h1 class="sliderTitle">AIR FORCE <br>NEW <br> SEASON</h1>
+                <h2 class="sliderPrice">$119</h2>
+                <button class="buyBtn">BUY NOW!</button>
+            </div>
+            <div class="sliderItem">
+                <img src="./image/jordan.png" alt="" class="slideImage">
+                <div class="slideBg"></div>
+                <h1 class="sliderTitle">AIR FORCE <br>NEW <br> SEASON</h1>
+                <h2 class="sliderPrice">$149</h2>
+                <button class="buyBtn">BUY NOW!</button>
+            </div>
+            <div class="sliderItem">
+                <img src="./image/blazer.png" alt="" class="slideImage">
+                <div class="slideBg"></div>
+                <h1 class="sliderTitle">AIR FORCE <br>NEW <br> SEASON</h1>
+                <h2 class="sliderPrice">$186</h2>
+                <button class="buyBtn">BUY NOW!</button>
+            </div>
+            <div class="sliderItem">
+                <img src="./image/crater.png" alt="" class="slideImage">
+                <div class="slideBg"></div>
+                <h1 class="sliderTitle">Crater <br>NEW <br> SEASON</h1>
+                <h2 class="sliderPrice">$209</h2>
+                <button class="buyBtn">BUY NOW!</button>
+            </div>
+            <div class="sliderItem">
+                <img src="./image/hippie.png" alt="" class="slideImage">
+                <div class="slideBg"></div>
+                <h1 class="sliderTitle">AIR FORCE <br>NEW <br> SEASON</h1>
+                <h2 class="sliderPrice">$165</h2>
+                <button class="buyBtn">BUY NOW!</button>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Slider  -->
+
+    <!-- Start Features -->
+    <div class="features">
+        <div class="feature">
+            <img src="image/shipping.png" alt="" class="featureImg">
+            <span class="featureTitle">FREE SHIPPING</span>
+            <span class="featureDesc">Free worldwide shipping on all orders.</span>
+        </div>
+        <div class="feature">
+            <img src="image/return.png" alt="" class="featureImg">
+            <span class="featureTitle">30 DAYS RETURN</span>
+            <span class="featureDesc">No question return and easy refund in 14 days.</span>
+        </div>
+        <div class="feature">
+            <img src="image/gift.png" alt="" class="featureImg">
+            <span class="featureTitle">GIFT CARDS</span>
+            <span class="featureDesc">Buy gift cards and use coupon codes easily.</span>
+        </div>
+        <div class="feature">
+            <img src="image/contact.png" alt="" class="featureImg">
+            <span class="featureTitle">CONTACT US!</span>
+            <span class="featureDesc">Keep in touch via email and support system.</span>
+        </div>
+    </div>
+    <!-- End Features -->
+
+    <!-- Start Product -->
+    <div class="product h-[120vh] bg-[whitesmoke] relative flex flex-col md:block items-center">
+        <img src="image/air.png" alt="" class="productImg w-[80%] md:w-1/2">
+        <div class="productDetails relative md:absolute top-[10%] right-0 w-full md:w-[40%] p-0 md:p-[50px] md:block flex flex-col items-center text-center">
+            <h1 class="productTitle uppercase text-[45px] m-0 md:text-[75px] font-[900]">air force</h1>
+            <h2 class="productPrice font-bold text-xl md:text-3xl">$199</h2>
+            <p class="productDesc text-[12px] md:text-[20px] text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Earum nisi necessitatibus distinctio suscipit aperiam quis non, maiores placeat debitis eum alias
+                possimus nam in labore aliquam minima expedita. Sit, illo.</p>
+            <div class="colors flex">
+                <div
+                    class="color w-[32px] h-[32px] rounded-[5px] bg-black my-[10px] mr-2 cursor-pointer hover:scale-125 transition-all">
+                </div>
+                <div
+                    class="color w-[32px] h-[32px] rounded-[5px] bg-blue-800 my-[10px] mr-2 cursor-pointer hover:scale-125 transition-all">
+                </div>
+            </div>
+
+            <div class="sizes flex">
+                <div
+                    class="size py-[5px] px-[20px] border-solid border-black border-[1px] text-[20px] mr-1 cursor-pointer transition-all duration-300 hover:bg-black hover:text-white ">
+                    42</div>
+                <div
+                    class="size py-[5px] px-[20px] border-solid border-black border-[1px] text-[20px] mr-1 cursor-pointer transition-all duration-300 hover:bg-black hover:text-white ">
+                    43</div>
+                <div
+                    class="size py-[5px] px-[20px] border-solid border-black border-[1px] text-[20px] mr-1 cursor-pointer transition-all duration-300 hover:bg-black hover:text-white ">
+                    45</div>
+            </div>
+            <button
+                class="productButton uppercase md:m-0 mt-3 float-right bg-black px-[20px] py-[10px] border-[1px] border-solid border-black rounded-xl text-white hover:bg-white hover:text-black font-bold">buy
+                now!</button>
+        </div>
+    </div>
+    <!-- End Product -->
+
+    <!-- Start Gallery -->
+     <div class="gallery p-[50px] hidden md:flex">
+        <div class="galleryItem">
+            <h1 class="galleryTitle">Be Yourself!</h1>
+            <img src="https://images.pexels.com/photos/9295809/pexels-photo-9295809.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="galleryImg" alt="Be YourSelf">
+        </div>
+        <div class="galleryItem">
+            <img src="https://images.pexels.com/photos/1040427/pexels-photo-1040427.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="galleryImg" alt="Be YourSelf">
+            <h1 class="galleryTitle">This is the First Day of Your New Life</h1>
+        </div>
+        <div class="galleryItem">
+            <h1 class="galleryTitle">Just Do It!</h1>
+            <img src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="galleryImg" alt="Be YourSelf">
+        </div>
+     </div>
+    <!-- End Gallery -->
+
+    <!-- Start New Season -->
+    <div class="newSeason flex md:flex-row flex-col">
+        <div class="nsItem">
+            <img src="https://images.pexels.com/photos/13565066/pexels-photo-13565066.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="" class="nsImg ">
+        </div>
+        <div class="nsItem md:p-0 p-[40px]">
+            <h3 class="nsTitleSm">WINTER NEW ARRIVALS</h3>
+            <h1 class="nsTitle">New Season</h1>
+            <h1 class="nsTitle">New Collection</h1>
+            <a href="#nav">
+                <button class="nsButton">CHOOSE YOUR STYLE</button>
+            </a>
+        </div>
+        <div class="nsItem">
+            <img src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt="" class="nsImg">
+        </div>
+    </div>
+    <!-- End New Season  -->
+
+    <!-- Start Footer  -->
+     <div class="footer flex flex-col md:flex-row ">
+        <div class="footerLeft flex-[2] flex justify-between p-[20px] md:p-[50px]">
+            <div class="footerMenu ">
+                <h1 class="fMenuTitle">About Us</h1>
+                <ul class="fMenuList">
+                    <li class="fListItem"><a href="https://to-do-list-2rxb.vercel.app/contactUs.html" target="_blank">Company</a></li>
+                    <li class="fListItem"><a href="https://to-do-list-2rxb.vercel.app/contactUs.html" target="_blank">Contact</a></li>
+                    <li class="fListItem"><a href="https://to-do-list-2rxb.vercel.app/contactUs.html" target="_blank">Careers</a></li>
+                    <li class="fListItem"><a href="https://to-do-list-2rxb.vercel.app/contactUs.html" target="_blank">Affiliates</a></li>
+                    <li class="fListItem"><a href="https://to-do-list-2rxb.vercel.app/contactUs.html" target="_blank">Stores</a></li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Useful Links</h1>
+                <ul class="fMenuList">
+                    <li class="fListItem"><a href="https://to-do-list-2rxb.vercel.app/contactUs.html" target="_blank">Support</a></li>
+                    <li class="fListItem"><a href="https://to-do-list-2rxb.vercel.app/contactUs.html" target="_blank">Refund</a></li>
+                    <li class="fListItem"><a href="https://to-do-list-2rxb.vercel.app/contactUs.html" target="_blank">FAQ</a></li>
+                    <li class="fListItem"><a href="https://to-do-list-2rxb.vercel.app/contactUs.html" target="_blank">Feedback</a></li>
+                    <li class="fListItem"><a href="https://to-do-list-2rxb.vercel.app/contactUs.html" target="_blank">Stories</a></li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Products</h1>
+                <ul class="fMenuList">
+                    <li class="fListItem"><a href="https://to-do-list-2rxb.vercel.app/contactUs.html" target="_blank">Air Force</a></li>
+                    <li class="fListItem"><a href="https://to-do-list-2rxb.vercel.app/contactUs.html" target="_blank">Air Jordan</a></li>
+                    <li class="fListItem"><a href="https://to-do-list-2rxb.vercel.app/contactUs.html" target="_blank">Crater</a></li>
+                    <li class="fListItem"><a href="https://to-do-list-2rxb.vercel.app/contactUs.html" target="_blank">Blazer</a></li>
+                    <li class="fListItem"><a href="https://to-do-list-2rxb.vercel.app/contactUs.html" target="_blank">Ripple</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerRight flex-1 p-[50px] flex flex-col justify-between">
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle text-[10px] md:text-[16px]">Subscibe to your newsletter</h1>
+                <div class="fMail flex">
+                    <input type="text" placeholder="Your@email.com" class="fInput md:w-full w-[80%] p-[5px] border-[1px] border-solid border-gray-600 rounded-md outline-none mr-0">
+                    <button class="fButton p-[5px] bg-black text-white rounded-md">Join!</button>
+                </div>
+            </div>
+            <div class="footerRightMenu md:m-0 my-3">
+                <h1 class="fMenuTitle">Follow Us</h1>
+                <div class="fIcons">
+                    <a href=""><img class="fIcon" src="./image/facebook.png" alt=""></a>
+                    <a href=""><img class="fIcon" src="./image/whatsapp.png" alt=""></a>
+                    <a href=""><img class="fIcon" src="./image/icons8-github-250.png" alt=""></a>
+                    <a href=""><img class="fIcon" src="./image/icons8-youtube-250.png" alt=""></a>
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <span class="copyright">@Anas Wael. All rights reserved. 2024</span>
+            </div>
+        </div>
+     </div>
+    <!-- End Footer  -->
+
+    <!-- scroll to Up Button  -->
+    <i class="fa-solid fa-arrow-up upButton bg-gradient-to-t from-[#DE00F6] to-[#372CD2] fixed text-white p-2 md:p-4 bottom-5 z-20 right-5 cursor-pointer text-xl md:text-2xl font-bold rounded-2xl hover:rounded-lg transition-all hover:text-black"></i>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
